@@ -1,160 +1,154 @@
-
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .portfolio-line {
-    border: 1px solid #ECECEC
+  border: 1px solid #ececec;
 }
 
 .section {
-    padding-bottom: 94px;
-    padding-top: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 /* Кнопки */
 
 .btn {
-    background-color: var(--secondary-gray-color);
-    color: var(--title-text-color);
-    padding: 6px 22px;
-    border-radius: 4px;
-    border: 1px solid transparent;
+  background-color: var(--secondary-gray-color);
+  color: var(--title-text-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .btn:hover,
 .btn:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
-    0px 1px 2px rgba(0, 0, 0, 0.08), 
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .sorter-list {
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 50px;
-    justify-content: center;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .sorter-item {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 /* Примеры работ */
 
 .case-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .case-item {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 0px;
-
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 0px;
 }
 
 .case-item:nth-child(3n) {
-    margin-right: 0;
-  }
-
- .case-item:nth-child(-n + 6) {
-     margin-bottom: 30px;
+  margin-right: 0;
 }
 
+.case-item:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
 
- .case-item:hover,
- .case-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-    0px 4px 4px rgba(0, 0, 0, 0.06), 
+.case-link {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.case-link:hover,
+.case-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
- .case-title {
-    margin-top: 0;
-    margin-bottom: 4px;
-    color: var(--title-text-color);
+.case-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: var(--title-text-color);
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
 }
 
- .case-text {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: var(--primary-text-color);
+.case-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--primary-text-color);
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.9;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
 }
 
- .card-content {
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-bottom: 20px;
-    padding-right: 24px;
-    border: 1px solid #EEEEEE;
-    
+.card-content {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
 }
 
- .card-overlay {
-    position: relative;
-    overflow: hidden;
+.card-overlay {
+  position: relative;
+  overflow: hidden;
 }
-  
-  .text-overlay {
-    position: absolute;
-    display: flex;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 
-  
-    margin: 0;
-    padding: 0 24px;
-  
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-  
-    justify-content: center;
-    align-items: center;
-  
-    background-color: rgba(33, 150, 243, 0.9);
-    color: var(--primary-white-color);
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.text-overlay {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0 24px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--primary-white-color);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
- 
-  .case-item:hover .text-overlay {
-    transform: translateY(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.case-item:hover .text-overlay {
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
